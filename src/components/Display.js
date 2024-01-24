@@ -6,7 +6,10 @@ const Display = () => {
   const  {calculate}  = useContext(CalculateContext)
     return(
         <> 
-          <Textfit className="screen" max={30}>
+          <Textfit
+            className="screen"
+            max={30}
+          >
             { calculate }
             9090
           </Textfit>
