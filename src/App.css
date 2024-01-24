@@ -16,7 +16,7 @@
   color: #61dafb;
 } */
 
-header, .home, .calculator, .notes {
+header, .home, .calculator, .notes, .todo {
   width: 70vw;
   margin: 20px auto;
 }
@@ -64,6 +64,33 @@ nav>menu>a:hover {
 
 aside {
   width: 45%;
+}
+
+.side-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-about>button {
+  padding: 10px 25px;
+  font-size: 17px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+}
+
+.div-overlay{
+  position: fixed;
+  height: 50%;
+  width: 30%;
+  border: 2px solid;
+  bottom: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px 2px lightblue;
 }
 /* home component */
 
@@ -128,4 +155,16 @@ aside {
 .operator {
   background-color: yellowgreen;
   color: #282c34;
+}
+
+/* start a todo styles */
+.todo {
+  text-align: center;
+}
+
+.todo-menu {
+  list-style: none;
+  border: 1px solid #ccc;
+  width: 50%;
+  margin: 15px auto;
 }
