@@ -169,6 +169,14 @@ aside {
   margin: 15px auto;
 }
 
+.todo-item {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 5px;
+  border: 1px solid rebeccapurple;
+}
+
 /* the begining of form */
 input, label {
   display: block;

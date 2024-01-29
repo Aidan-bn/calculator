@@ -1,12 +1,35 @@
-const TodoIput = (props) => {
-    const { tasks } = props;
+const TodoIput = ({ todoProps, setTodosProp}) => {
+    // const { tasks } = props;
+    const handleChange = (id) => {
+        setTodosProp((prevInput) => 
+        prevInput.map((item) => {
+            if(item.id === id) {
+                return {
+                    ...item,
+                    completed: !item.completed
+                };
+            }
+            return item;
+          })
+          )
+          console.log(todoProps);
+    }
+
     return (
         <>
             <menu className="todo-menu">
                 {
-                    tasks.map((task) => (
-                        <li key={task.id}>
-                            {task.title}
+                    todoProps.map((item) => (
+                        <li
+                          key={item.id}
+                          className="todo-item"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={item.completed}
+                            onChange={() => handleChange(item.id)}
+                           />
+                          {item.title}
                         </li>
                     ))
                 }

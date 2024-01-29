@@ -1,7 +1,8 @@
+import { useState } from "react";
 import TodoIput from "./TodoInput";
 
 const TodoContainer = () => {
-    const todo = [
+    const [todo, setTodo] = useState([
         {
             id: 1,
             title: 'Time to study react deeply',
@@ -17,12 +18,12 @@ const TodoContainer = () => {
             title: 'Finalize with ROR',
             completed: false,
         },
-    ];
+    ]);
 
     return(
         <>
             <h1>Welcome to a Todo Application</h1>
-            <TodoIput tasks={todo} />
+            <TodoIput todoProps={todo} setTodosProp={setTodo}/>
         </>
     )
 }
