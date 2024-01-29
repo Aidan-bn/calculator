@@ -1,4 +1,5 @@
-import { createContext, useState } from "react"
+import { useState } from "react";
+import { createContext } from "react"
 
 export const CalculateContext = createContext();
 
@@ -19,6 +20,6 @@ const CalculatorProvider = ({ children }) => {
             {children}
         </CalculateContext.Provider>
     )
-}
+ }
 
 export default CalculatorProvider;

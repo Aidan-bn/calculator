@@ -168,3 +168,9 @@ aside {
   width: 50%;
   margin: 15px auto;
 }
+
+/* the begining of form */
+input, label {
+  display: block;
+  padding: 3px 8px;
+}

@@ -1,3 +1,4 @@
+import Form  from "./Form";
 import Nav from "./Navbar";
 
 const Notes = () => {
@@ -11,7 +12,7 @@ const Notes = () => {
                 relax. Everything is under control
             </aside>
             <aside>
-                Right
+                <Form />
             </aside>
           </div>
         </>

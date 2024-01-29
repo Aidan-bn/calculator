@@ -15,7 +15,7 @@ const specialChar = (button) => {
   return className[button];
 }
 
-const Button = () => {
+const Button = ({ children }) => {
     return(
         <>
           <div 
